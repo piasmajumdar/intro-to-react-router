@@ -1,18 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+
 import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div>Hello from react</div>
+    path: '/',
+    element: <div>Hello from react router</div>
   },
   {
-    path: "about",
+    path: 'about',
     element: <div>About me here</div>
   },
   {
@@ -21,12 +22,11 @@ const router = createBrowserRouter([
   },
   {
     path: 'app',
-    Component: App,
-    // element: <App></App>
+    element:<App></App>
   },
   {
     path: 'app2',
-    element: <App></App>
+    Component: App
   }
 ])
 
