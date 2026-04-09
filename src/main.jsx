@@ -9,7 +9,7 @@ import Home from './Components/Home/Home';
 import Mobiles from './Components/Mobiles/Mobiles';
 import Laptops from './Components/Laptops/Laptops';
 import Users from './Components/Users/Users';
-import User2 from './Components/User2/User2';
+import Users2 from './Components/Users2/Users2';
 
 const usersPromise = fetch("https://jsonplaceholder.typicode.com/users").then(res=> res.json());
 
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: 'users2',
         element: <Suspense>
-          <User2 usersPromise={usersPromise}></User2>
+          <Users2 usersPromise={usersPromise}></Users2>
         </Suspense>
       }
     ]
